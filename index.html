@@ -5,18 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oxfordfish Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Harici CSS dosyası bağlanıyor -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container">  
-        <div id="main">
+        <!-- Bio Header -->
+        <header id="main">
             <h1>Hi, it's me, Oxfordfish</h1>
-            <p>I am an electric-electronic engineering student who also does web and game development as a side hobby</p>
-        </div>
-        <div id="buttons">
-            <label><a id="projects" href="#" class="button">My Projects</a></label>
-            <label><a id="contact" href="#" class="button">Please Contact Me</a></label>
-        </div>
+            <p>I am an Electrical & Electronics Engineering student who also does web and game development as a side hobby.</p>
+        </header>
+
+        <!-- Navigation Buttons -->
+        <nav id="buttons">
+            <a href="#projects-section" class="button">My Projects</a>
+            <a href="mailto:your-email@example.com" class="button">Contact Me</a>
+        </nav>
+
+        <!-- Projects Section -->
+        <main id="projects-section">
+            <article class="project-card">
+                <h2>🏎️ F1 Telemetry & Speed Profile Plotter</h2>
+                <p class="project-desc">
+                    A Python data pipeline using the <code>FastF1</code> API to analyze lap telemetry and generate 2D spatial track heatmaps.
+                </p>
+
+                <!-- Project Visuals -->
+                <div class="project-gallery">
+                    <img src="telemetry_comparison.png" alt="F1 Telemetry Comparison Plot">
+                    <img src="track_map.png" alt="F1 Circuit Speed Heatmap">
+                </div>
+
+                <!-- Feature Highlights -->
+                <ul class="project-features">
+                    <li><strong>Lap Telemetry Traces:</strong> Side-by-side analysis of Speed, Throttle %, Brake pressure, and Gear usage.</li>
+                    <li><strong>2D Track Heatmaps:</strong> Renders circuit layouts using GPS coordinates with a continuous speed colormap (<code>plasma</code>).</li>
+                    <li><strong>Local Caching:</strong> Integrated FastF1 file caching to minimize API fetch times on repeat runs.</li>
+                </ul>
+
+                <!-- Tech Badges & GitHub Link -->
+                <div class="project-footer">
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>FastF1</span>
+                        <span>Matplotlib</span>
+                        <span>Pandas</span>
+                    </div>
+                    <a href="https://github.com/YOUR_USERNAME/f1-telemetry-plotter" target="_blank" rel="noopener noreferrer" class="github-btn">View on GitHub →</a>
+                </div>
+            </article>
+        </main>
     </div>
 </body>
 </html>
