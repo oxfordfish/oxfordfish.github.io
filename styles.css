@@ -166,3 +166,8 @@ body {
   color: #fbbf24;
   border: 1px solid rgba(245, 158, 11, 0.35);
 }
+
+/* Adds 32px gap between cards regardless of parent container rules */
+.project-card + .project-card {
+  margin-top: 32px;
+}
