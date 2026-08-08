@@ -1,1 +1,5 @@
-This is my portfolio project, i am a newbie so i would love some hand
+# 🌐 oxfordfish.github.io
+
+Personal portfolio website showcasing embedded systems, PCB designs, and hardware/software projects.
+
+🚀 **Live Site:** [oxfordfish.github.io](https://oxfordfish.github.io)
